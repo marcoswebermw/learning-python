@@ -28,3 +28,16 @@ class Pessoa:
                 print("Altura: %.2f" %(self.altura))
                 print("--------------------------------")
 
+
+p = Pessoa('Scarlett Johanson', 31, 58, 1.63)
+p.imprimir_detalhes()
+p.envelhecer(1) 
+p.engordar(2)
+p.emagrecer(1)
+p.crescer(0.05)
+
+p.imprimir_detalhes()
+
+print("Dicionário criado implicitamente para o objeto:")
+print(p.__dict__)
+
