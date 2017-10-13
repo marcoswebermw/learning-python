@@ -1,2 +1,2 @@
 # python-exemplos
-Repositório para colocar exemplos de códigos feitos em python para treinamento pessoal.
+Repositório para estudar e colocar exemplos de códigos feitos em python para treinamento pessoal.
