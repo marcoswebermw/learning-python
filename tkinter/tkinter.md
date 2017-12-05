@@ -21,3 +21,10 @@ Caso tenha algum problema e a Tkinter não esteja instalada use o camando abaixo
   
 `sudo apt install python3-tk`   
   
+  
+### Extensão Ttk
+    
+Para usar o label, buttons e outros widgets precisamos importar também uma extensão chamada `ttk` que vem dentro do pacote do tkinter. Ela dá um melhor look and feel para aplicações tkinter.    
+  
+`from tkinter import ttk`  
+  
