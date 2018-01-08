@@ -22,7 +22,7 @@ pip3 install beautifulsoup4
   
 ### Testando o Beautiful Soup
   
-Abra um interpretador python e tente importar o módulo se tudo der certo nada será exibido.  
+Abra um interpretador python e tente importar o módulo, se tudo der certo, nada será exibido.  
   
 ```sh
 python
