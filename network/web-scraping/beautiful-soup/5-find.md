@@ -19,7 +19,7 @@ Os métodos disponibilizados para tal são:
   
 ### find()
   
-O método `find()` busca pela `primeira` ocorrência dentro de um objeto do BeautifilSoup.  
+O método `find()` busca pela `primeira` ocorrência dentro de um objeto do BeautifilSoup. Se nada for encontrado, será retornado o valor `None`.   
   
 ```py
 from bs4 import BeautifulSoup
