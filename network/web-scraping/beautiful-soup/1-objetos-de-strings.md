@@ -1,4 +1,4 @@
-## Objetos Beautiful Soup através de strings
+## Objetos BeautifulSoup através de strings
   
 Strings podem ser passadas para serem transformadas em objetos do Beautiful Soup e assim serem trabalhadas.  
    
