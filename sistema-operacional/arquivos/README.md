@@ -96,7 +96,7 @@ O `read()` sem parâmetros lê todo o arquivo. Mas pode ler somente a quantidade
   
 O `tell()` indica a posição atual do manipulador de arquivos.
   
-# Lendo apenas 5 caracteres do arquivo.
+### Lendo apenas 5 caracteres do arquivo.
   
 ```py
 with open('arquivo.txt', 'r') as arquivo_caractere:
