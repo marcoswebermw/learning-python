@@ -6,8 +6,15 @@ from pathlib import Path
 diretorio = Path('.')
 
 # Procurando arquivos python no diretório.
-[print(x) for x in diretorio.glob('*.py')]
+[print('glob - {}'.format(x)) for x in diretorio.glob('*.py')]
 print('\n--------------\n')
 
 # Procurando arquivos python incluindo subdiretórios.
-[print(x) for x in diretorio.glob('**/*.py')]
+[print('glob recursivo - {}'.format(x)) for x in diretorio.glob('**/*.py')]
+print('\n--------------\n')
+
+# O 'rglob' é parecido com o 'glob', com o '**' por padrão.
+# Ou seja, o 'rglob' procura arquivos e diretórios 'casando' 
+# um padrão, de forma recursiva.
+
+[print('rglob - {}'.format(x)) for x in diretorio.rglob('*.py')]
