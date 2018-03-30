@@ -4,7 +4,7 @@ Arquivos podem ser trabalhados de forma simples em Python com o método `open`.
   
 Sempre feche um arquivo para liberar recursos do sistema.
   
-Use o `read` somente em arquivos pequenos. Pois o arquivo será carregado inteiramente na memória. Arquivos muito grande consumiram muitos recursos da máquina com o uso do `read`. Se o arquivo for grande carregue linha por linha ou por pedaços e, vá processando as partes aos poucos.
+Use o `read` somente em arquivos pequenos. Pois o arquivo será carregado inteiramente na memória. Arquivos muito grande consumirão muitos recursos da máquina com o uso do `read`. Se o arquivo for grande carregue linha por linha ou por pedaços e, vá processando as partes aos poucos.
   
 ### Modos de acesso aos arquivos
   
@@ -96,7 +96,7 @@ O `read()` sem parâmetros lê todo o arquivo. Mas pode ler somente a quantidade
   
 O `tell()` indica a posição atual do manipulador de arquivos.
   
-### Lendo apenas 5 caracteres do arquivo.
+### Lendo apenas 7 caracteres do arquivo.
   
 ```py
 with open('arquivo.txt', 'r') as arquivo_caractere:
@@ -105,7 +105,7 @@ with open('arquivo.txt', 'r') as arquivo_caractere:
     print(linha) # Chicago
     print('\n')
 
-# Lendo apenas 5 bytes do arquivo.
+# Lendo apenas 13 bytes do arquivo.
 with open('arquivo.txt', 'rb') as arquivo_byte:
     linha = arquivo_byte.read(13)
     print('Imprimindo até a posição: {}'.format(arquivo_byte.tell()))
