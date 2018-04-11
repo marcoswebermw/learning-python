@@ -23,6 +23,9 @@ python
 import django
 
 django.get_version()
+
+# Testando a versão pelo shell
+python -m django --version
 ```
   
 ## Referências
