@@ -1,16 +1,27 @@
-# Django
+# Configurando
   
-## Projetos e Apps
+## Criando o ambiente virtual e instalando o Django via pip.
   
-Um projeto é um conjunto de aplicações e configurações de um website. Um app é uma aplicação web que faz alguma coisa.
-  
-Um projeto pode conter vários apps. E um App pode estar em vários projetos.
-  
-## Algumas considerações
+```sh
+# Criando ambiente virtual.
+venv django -p python3.5
 
-No servidor, nunca coloque código python no diretório root como em `/var/www`. Por questões de segurança coloque o código fora como em `/home/meu_projeto`. E nunca use palavras reservadas do python ou django em nomes em seus projetos.
-  
+source django/bin/activate
 
+# Instalando o Django.
+pip install django
+
+# Testando o Django.
+python
+
+import django
+
+django.get_version()
+
+# Testando a versão pelo shell
+python -m django --version
+```
+  
 ## Criando um projeto
   
 Será necessário criar uma estrutura de diretórios com vários arquivos de configurações para um projeto Django. Isso pode ser feito da seguinte maneira:
@@ -37,7 +48,7 @@ novo_site/
   
 - `novo_site/novo_site/` - Este segundo `novo_site` representa o pacote python do projeto e, que será usado para importar algum recurso.
   
-- Agora os arquivos internos dentro de `novo_site/novo_site/`:
+- Agora os arquivos internos dentro do pacote `novo_site/novo_site/`:
   
     - `__init__.py` - Arquivo vazio que indica que este diretório é um pacote.  
     - `settings.py` - Configurações deste projeto.  
