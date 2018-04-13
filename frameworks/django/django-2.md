@@ -18,13 +18,13 @@ python manage.py runserver 8080
   
 ## Trocando o endereço IP do servidor
   
-O servidor pode ser executado com outro IP. Para isso passe-o juntamento com sua porta durante a chamado do servidor.
+O servidor pode ser executado com outro IP. Para isso passe-o juntamento com sua porta durante a chamada do servidor.
   
 ```py
-python manage.py runserver 0.0.0.0:8080
+python manage.py runserver 0:8080
 ```
   
-> O endereço `0.0.0.0` indica todos os endereços públicos da rede. Este endereço também pode ser usado em sua forma de atalho, que é `0:8000`.
+> O endereço `0` é um atalho que indica todos os endereços públicos da rede. Este endereço também pode ser usado em sua forma normal, que é `0.0.0.0:8000`.
   
 > O servidor não precisa ser reiniciado em alterações de código. Somente será necessário quando ocorrerem ações como a adição de arquivos.
   
