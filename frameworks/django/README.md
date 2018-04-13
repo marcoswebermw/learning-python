@@ -4,29 +4,17 @@ Django, segundo sua documentação, é um framework web de alto nível escrito e
   
 É livre e open source.
   
-## Configurando
+## Projetos e Apps
   
-* Criando o ambiente virtual e instalando o Django via pip.
+Um projeto é um conjunto de aplicações e configurações de um website. Um app é uma aplicação web que faz alguma coisa.
   
-```sh
-# Criando ambiente virtual.
-venv django -p python3.5
+Um projeto pode conter vários apps. E um App pode estar em vários projetos.
+  
+Um aplicativo Django na verdade é um pacote python em certa convenção de diretórios. Mas o Django, através de um utilitário, já cria essa estrutura para o programador. Este, somente tem que se preocupar apenas com o código.
+  
+## Algumas considerações
 
-source django/bin/activate
-
-# Instalando o Django.
-pip install django
-
-# Testando o Django.
-python
-
-import django
-
-django.get_version()
-
-# Testando a versão pelo shell
-python -m django --version
-```
+No servidor, nunca coloque código python no diretório root como em `/var/www`. Por questões de segurança coloque o código fora como em `/home/meu_projeto`. E nunca use palavras reservadas do python ou django em nomes em seus projetos.
   
 ## Referências
   
