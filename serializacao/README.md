@@ -16,6 +16,8 @@ Um problema da serialização é que como os dados são guardados de forma seria
   
 ## Referências
   
+* [Docs Python](https://docs.python.org/3/library/pickle.html)  
+
 * [Pythonhelp](https://pythonhelp.wordpress.com/2013/07/20/serializacao-de-objetos-em-python/)  
 
 * [Wikipedia](https://pt.wikipedia.org/wiki/Serialização)
