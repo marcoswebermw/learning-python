@@ -18,6 +18,13 @@ import django
 
 django.get_version()
 
+# Outra forma de testar o Django.
+python
+
+import django
+
+django.VERSION
+
 # Testando a versão pelo shell
 python -m django --version
 ```
