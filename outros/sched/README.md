@@ -26,3 +26,4 @@ Se `time.monotonic` não estiver disponível será usada `time.time` em seu luga
 ## Referências
   
 * [Docs Python](https://docs.python.org/3/library/sched.html)  
+* [bip.weizmann](https://bip.weizmann.ac.il/course/python/PyMOTW/PyMOTW/docs/sched/index.html)  
