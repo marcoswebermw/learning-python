@@ -88,6 +88,49 @@ arq_compactado.extractall('/tmp/varios_arquivos_extraidos/')
 arq_compactado.close()
 ```  
 
+## Obtendo Informações dos Pacotes  
+
+```py
+# Lista de arquivos dentro de um pacote zip com `namelist()`.
+import zipfile
+
+arq_compactado = zipfile.ZipFile('compactando_varios.zip')
+lista = arq_compactado.namelist()
+for l in lista:
+  print(l)
+
+arq_compactado.close()
+```  
+
+```py
+# Informações de um arquivo específico dentro do pacote.
+import zipfile
+
+arq_compactado = zipfile.ZipFile('compactando_varios.zip')
+info = arq_compactado.getinfo('arq.txt')
+# Várias informações.
+print(info)
+print("\n")
+
+# Lista com várias informações de todos os arquivos no pacote.
+print(arq_compactado.infolist())
+print("\n")
+
+# Datas
+print(info.date_time)
+print("\n")
+
+# Informações mostradas individualmente.
+print("Nome: {}".format(info.filename))
+print("Tipo De Compressão: {}".format(info.compress_type))
+print("Tamanho do Arquivo: {}".format(info.file_size))
+print("Tamanho do Arquivo Compactado: {}".format(info.compress_size))
+
+arq_compactado.close()
+```  
+
 ## Referências  
 
-[code.tutsplus.com](https://code.tutsplus.com/pt/tutorials/compressing-and-extracting-files-in-python--cms-26816)  
+[code.tutsplus.com](https://code.tutsplus.com/pt/tutorials/compressing-and-extracting-files-in-python--cms-26816);  
+
+[Docs Python](https://docs.python.org/3/library/zipfile.html);  
