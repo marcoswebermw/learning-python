@@ -32,25 +32,25 @@ def hello_world():
 
 ## Comandos
 
-flask --help
-flask routes
-flask run
-flask shell
+flask --help  
+flask routes  
+flask run  
+flask shell  
 
-## Outros para aprender
+## Outras ferramentas relacionadas para aprender
   
-tinymongo
-pymongo
-blueprint
-factories
-sqlalchemy
-flask-admin
-wsgi
-templates
-wtforms
-flask_simplelogin
-jinja2
-pytest-flask
+tinymongo  
+pymongo  
+blueprint  
+factories  
+sqlalchemy  
+flask-admin  
+wsgi  
+templates  
+wtforms  
+flask_simplelogin  
+jinja2  
+pytest-flask  
 
 ## Referências
   
