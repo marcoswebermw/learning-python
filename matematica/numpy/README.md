@@ -77,8 +77,11 @@ matriz_aleatoria = np.random.random((3,2))
 print(matriz_aleatoria)  # [ [0.70394434 0.24837714] [0.1890589  0.30119754] [0.59894015 0.70585995] ]
  ```  
    
+> Estudar mais coisas em [cs231n.github.io](http://cs231n.github.io/python-numpy-tutorial/#python).  
   
   
 ## Referências  
 
 [cs231n.github.io](http://cs231n.github.io/python-numpy-tutorial/#python)  
+[numpy.org](https://www.numpy.org)  
+
